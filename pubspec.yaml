@@ -1,0 +1,33 @@
+name: coffee_shop
+description: A new Flutter project.
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=2.19.6 <3.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.2
+  animated_bottom_navigation_bar: ^1.2.0
+  flutter_bloc: ^8.1.3
+  flutter_awesome_select: ^6.5.0
+  intl: ^0.18.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^2.0.0
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/dashboard/
+    - assets/drinks/
+    - assets/dummy/
+  fonts:
+    - family: Recoleta
+      fonts:
+        - asset: assets/fonts/Recoleta-Black.ttf
+        - asset: assets/fonts/Recoleta-Bold.ttf
