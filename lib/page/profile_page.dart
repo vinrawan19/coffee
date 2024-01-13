@@ -1,3 +1,4 @@
+import 'package:coffee_shop/page/login_page.dart';
 import 'package:flutter/material.dart';
 
 class ProfilePage extends StatefulWidget {
@@ -176,7 +177,10 @@ class _ProfilePageState extends State<ProfilePage> {
                     style: const ButtonStyle(
                         backgroundColor:
                             MaterialStatePropertyAll(Colors.white)),
-                    onPressed: () {},
+                    onPressed: () => Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => const LoginPage())),
                     child: const Text(
                       "Log Out",
                       style: TextStyle(color: Colors.red),

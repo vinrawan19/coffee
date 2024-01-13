@@ -1,6 +1,7 @@
 import 'package:coffee_shop/controller/order/order_cubit.dart';
 import 'package:coffee_shop/page/history_page.dart';
 import 'package:coffee_shop/page/home_page.dart';
+import 'package:coffee_shop/page/login_page.dart';
 import 'package:coffee_shop/page/order_page.dart';
 import 'package:coffee_shop/page/profile_page.dart';
 import 'package:flutter/material.dart';
@@ -26,7 +27,7 @@ class MyApp extends StatelessWidget {
         theme: ThemeData(
           primarySwatch: Colors.blue,
         ),
-        home: const SafeArea(child: MyHomePage()),
+        home: const SafeArea(child: LoginPage()),
       ),
     );
   }

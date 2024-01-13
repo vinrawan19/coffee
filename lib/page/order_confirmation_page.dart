@@ -2,6 +2,7 @@ import 'package:coffee_shop/controller/order/order_cubit.dart';
 import 'package:coffee_shop/modal/modal_confirmation_cart.dart';
 import 'package:coffee_shop/page/payment_method_page.dart';
 import 'package:coffee_shop/page/promo_page.dart';
+import 'package:coffee_shop/page/success_page.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:intl/intl.dart';
@@ -298,7 +299,11 @@ class _OrderConfirmationPageState extends State<OrderConfirmationPage> {
                       Padding(
                         padding: const EdgeInsets.symmetric(horizontal: 8.0),
                         child: ElevatedButton(
-                            onPressed: () {},
+                            onPressed: () => Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                  builder: (context) => const SuccessPage(),
+                                )),
                             child: Row(
                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
                               children: const [
