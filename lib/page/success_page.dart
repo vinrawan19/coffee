@@ -20,8 +20,8 @@ class _SuccessPageState extends State<SuccessPage> {
 
   @override
   Widget build(BuildContext context) {
-    return WillPopScope(
-      onWillPop: () async => await Future.value(false),
+    return PopScope(
+      onPopInvoked: (v)=> false,
       child: Scaffold(
         backgroundColor: Colors.green,
         body: SafeArea(
