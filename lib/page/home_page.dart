@@ -116,7 +116,7 @@ class _HomePageState extends State<HomePage> {
               child: Container(
                 padding: const EdgeInsets.all(8),
                 width: mediaQuery.width,
-                height: mediaQuery.height * 0.09,
+                height: mediaQuery.height * 0.115,
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
@@ -138,7 +138,7 @@ class _HomePageState extends State<HomePage> {
                             const Text(
                               "Order now!",
                               style: TextStyle(
-                                  fontWeight: FontWeight.bold, fontSize: 18),
+                                  fontWeight: FontWeight.bold, fontSize: 16),
                             ),
                             SizedBox(
                               height: 15,

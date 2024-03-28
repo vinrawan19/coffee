@@ -263,10 +263,6 @@ void addToCartModal(context,
                                         "Mohon untuk memilih seluruh konfigurasi minuman!"),
                                     actions: [
                                       ElevatedButton(
-                                          style: const ButtonStyle(
-                                              backgroundColor:
-                                                  MaterialStatePropertyAll(
-                                                      Colors.green)),
                                           onPressed: () =>
                                               Navigator.pop(context),
                                           child: const Text("Okay"))

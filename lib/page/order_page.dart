@@ -2,7 +2,6 @@ import 'package:coffee_shop/controller/order/order_cubit.dart';
 import 'package:coffee_shop/modal/modal_add_to_cart.dart';
 import 'package:coffee_shop/modal/modal_confirmation_cart.dart';
 import 'package:coffee_shop/model/product_model.dart';
-import 'package:coffee_shop/page/order_confirmation_page.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
@@ -308,7 +307,7 @@ class _OrderPageState extends State<OrderPage> {
                       shape: MaterialStatePropertyAll(
                         RoundedRectangleBorder(
                             borderRadius: BorderRadius.all(Radius.circular(15)),
-                            side: BorderSide(color: Colors.blue)),
+                            side: BorderSide(color: Colors.deepPurpleAccent)),
                       )),
                   onPressed: () =>
                       addToCartModal(context, data: data, blocCtx: blocContext),

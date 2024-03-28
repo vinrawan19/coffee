@@ -39,7 +39,7 @@ class _HistoryPageState extends State<HistoryPage> {
       child: Container(
         decoration: const BoxDecoration(
             color: Colors.white,
-            borderRadius: BorderRadius.all(Radius.circular(12))),
+            borderRadius: BorderRadius.all(Radius.circular(10))),
         child: Padding(
           padding: const EdgeInsets.all(8.0),
           child: Row(
@@ -61,13 +61,13 @@ class _HistoryPageState extends State<HistoryPage> {
               Expanded(
                   child: ConstrainedBox(
                 constraints: BoxConstraints(
-                    maxHeight: MediaQuery.of(context).size.height * 0.135),
+                    maxHeight: MediaQuery.of(context).size.height * 0.14),
                 child: Column(
                   children: [
-                    Padding(
-                      padding: const EdgeInsets.only(left: 8.0),
+                    const Padding(
+                      padding: EdgeInsets.only(left: 8.0),
                       child: Row(
-                        children: const [
+                        children: [
                           Text(
                             "Caffe Americano",
                             style: TextStyle(
@@ -103,7 +103,7 @@ class _HistoryPageState extends State<HistoryPage> {
                               TextButton(
                                   style: const ButtonStyle(
                                       padding: MaterialStatePropertyAll(
-                                          EdgeInsets.all(0))),
+                                          EdgeInsets.only(right:10))),
                                   onPressed: () {},
                                   child: const Text("See Detail")),
                               TextButton(

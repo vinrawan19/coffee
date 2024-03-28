@@ -14,7 +14,7 @@ void main() {
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
-  @override
+@override
   Widget build(BuildContext context) {
     return MultiBlocProvider(
       providers: [
@@ -82,7 +82,7 @@ class _MyHomePageState extends State<MyHomePage> {
         ],
         onTap: (i) => setState(() => bottomNavIndex = i),
       ),
-      body: _buildBody[bottomNavIndex],
+      body: SafeArea(child:_buildBody[bottomNavIndex]),
     );
   }
 

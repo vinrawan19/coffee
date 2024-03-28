@@ -1,3 +1,14 @@
 {
-    "dart.flutterSdkPath": "C:\\Users\\JT\\fvm\\3.7.9"
+    "dart.flutterSdkPaths": [
+        // "/Application/Flutter/flutter/bin",
+        "C:/Users/Alvin/fvm/versions/3.16.7/bin"
+    ],
+    "dart.flutterSdkPath": "C:\\Users\\Alvin\\fvm\\versions\\3.16.7\\bin",
+    "search.exclude": {
+        "**/.fvm": true
+      },
+      // Remove from file watching
+      "files.watcherExclude": {
+        "**/.fvm": true
+      }
 }
